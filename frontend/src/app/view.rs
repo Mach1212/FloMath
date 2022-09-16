@@ -1,5 +1,3 @@
-use crate::app::{Structure, StructureIter};
-use strum::IntoEnumIterator;
 use zoon::named_color::*;
 use zoon::{println, *};
 

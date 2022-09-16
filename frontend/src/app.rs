@@ -1,5 +1,3 @@
-use strum::{Display, EnumIter};
-use zoon::named_color::{GREEN_7, GREEN_8};
 use zoon::*;
 
 pub(crate) mod view;
