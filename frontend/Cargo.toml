@@ -1,0 +1,9 @@
+[package]
+version = "0.1.0"
+name = "frontend"
+edition = "2021"
+
+[dependencies]
+zoon = { git = "https://github.com/MoonZoon/MoonZoon", branch = "main" }
+#rug = "1.17.0"
+#gmp-mpfr-sys = { version="1.4.10", features=["force-cross"] }
