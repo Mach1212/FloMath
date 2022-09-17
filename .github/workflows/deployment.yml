@@ -1,9 +1,5 @@
 name: deployment
-on:
-  push:
-    tags:
-      - *
-
+on: [push]
 jobs:
   deploy:
     runs-on:

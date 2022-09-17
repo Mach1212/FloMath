@@ -1,12 +1,7 @@
+use crate::lib::node::Node;
 use zoon::*;
 
 pub(crate) mod view;
-
-enum Structure {
-    Vec3d(f64, f64, f64),
-    Vec2d(f64, f64),
-    Scalar(f64),
-}
 
 #[static_ref]
 fn add_position() -> &'static Mutable<(i32, i32)> {
@@ -16,4 +11,9 @@ fn add_position() -> &'static Mutable<(i32, i32)> {
 #[static_ref]
 fn show_add() -> &'static Mutable<bool> {
     Mutable::new(false)
+}
+
+#[static_ref]
+fn nodes() -> &'static MutableVec<Node> {
+    MutableVec::new()
 }
