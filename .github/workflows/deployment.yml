@@ -7,6 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          target: wasm32-unknown-unknown
       - uses: actions-rs/cargo@v1
         with:
           command: install mzoon --git https://github.com/MoonZoon/MoonZoon --branch main --locked
