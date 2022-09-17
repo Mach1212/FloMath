@@ -12,5 +12,6 @@ jobs:
           target: wasm32-unknown-unknown
       - uses: actions-rs/cargo@v1
         with:
-          command: install mzoon --git https://github.com/MoonZoon/MoonZoon --branch main --locked
+          command: install
+          args: mzoon --git https://github.com/MoonZoon/MoonZoon --branch main --locked
       - run: mzoon start --release
