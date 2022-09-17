@@ -4,12 +4,12 @@ use zoon::*;
 pub(crate) mod view;
 
 #[static_ref]
-fn add_position() -> &'static Mutable<(i32, i32)> {
+fn add_menu_position() -> &'static Mutable<(i32, i32)> {
     Mutable::new((0, 0))
 }
 
 #[static_ref]
-fn show_add() -> &'static Mutable<bool> {
+fn add_menu_visible() -> &'static Mutable<bool> {
     Mutable::new(false)
 }
 
