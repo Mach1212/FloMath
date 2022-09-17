@@ -6,6 +6,8 @@ jobs:
       - self-hosted
     steps:
       - uses: actions/checkout@v3
-#      - run: curl https://sh.rustup.rs -sSf | sh -s -- -y
-      - run: cargo install mzoon --git https://github.com/MoonZoon/MoonZoon --branch main --locked
+      - uses: actions-rs/toolchain@v1
+      - uses: actions-rs/cargo@v1
+        with:
+          command: install mzoon --git https://github.com/MoonZoon/MoonZoon --branch main --locked
       - run: mzoon start --release
