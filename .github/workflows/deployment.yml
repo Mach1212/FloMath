@@ -7,6 +7,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: sudo apt install cargo
-      - run: cargo install mzoon --git https://github.com/MoonZoon/MoonZoon --locked
+      - run: cargo install mzoon --git https://github.com/MoonZoon/MoonZoon --branch main --locked
       - run: mzoon start --release
-      - run: uninstall mzoon
