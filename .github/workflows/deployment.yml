@@ -6,6 +6,7 @@ jobs:
       - self-hosted
     steps:
       - uses: actions/checkout@v3
-      - run: sudo apt install cargo
+      - run: sudo apt install npm
+      - run: sudo npm install -g cargo
       - run: cargo install mzoon --git https://github.com/MoonZoon/MoonZoon --branch main --locked
       - run: mzoon start --release
