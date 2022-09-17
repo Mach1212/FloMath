@@ -6,6 +6,6 @@ jobs:
       - self-hosted
     steps:
       - uses: actions/checkout@v3
-      - run: sudo apt install cargo -y
+      - run: curl https://sh.rustup.rs -sSf | sh -s -- -y
       - run: cargo install mzoon --git https://github.com/MoonZoon/MoonZoon --branch main --locked
       - run: mzoon start --release
